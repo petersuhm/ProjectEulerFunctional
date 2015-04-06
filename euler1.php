@@ -12,7 +12,7 @@ function findMultiplesOfThreeOrFiveBelow($limit)
 echo 'Sum: ' . array_sum(findMultiplesOfThreeOrFiveBelow(1000)) . "\n\n";
 echo "Tests:\n\n";
 
-require_once 'assert.php';
+require_once 'TestFrameworkInATweet.php';
 it('lists all multiples of 3 or 5 below 10', findMultiplesOfThreeOrFiveBelow(10) === [3, 5, 6, 9]);
 it('lists all multiples of 3 or 5 below 15', findMultiplesOfThreeOrFiveBelow(15) === [3, 5, 6, 9, 10, 12]);
 done();
